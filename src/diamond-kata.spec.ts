@@ -1,7 +1,6 @@
 import { describe, expect, it, vi } from "vitest"
 import { Printer } from "./printer.js"
 import { DiamondKata } from "./diamond-kata.js"
-import exp = require("constants")
 
 class MockPrinter implements Printer {
   print = vi.fn()
