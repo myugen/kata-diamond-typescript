@@ -1,11 +1,10 @@
 import { Printer } from "./printer.js"
-import { create } from "domain"
+import { alphabet, AlphabetLetter } from "./alphabet.js"
+
 export class DiamondKata {
   constructor(private printer: Printer) {}
 
-  render(shape: "A" | "B" | "C" | "D" | "E" | "F" | "G") {
-    const alphabet = ["A", "B", "C", "D", "E", "F", "G"] as const
-
+  render(shape: AlphabetLetter) {
     let currentPosition = alphabet.indexOf(shape)
     const totalOfColumns = 2 * currentPosition + 1
 
