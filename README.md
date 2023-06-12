@@ -1,9 +1,18 @@
-# TypeScript Kata Setup
+# Diamond
 
-Includes:
+## About this Kata
 
-- 💬 TypeScript
-- ✅ Vitest
-- 💅 Prettier
+Alistair Cockburn wrote a blog post about this kata, in response to the Seb Rose kata proposition.
+Problem Description
 
-> Mixture from [LeanMind](https://github.com/lean-mind/typescript-boilerplate)'s & [Acid Tango](https://gitlab.com/acid-tango/boilerplates/typescript) boilerplates
+Given a letter, print a diamond starting with ‘A’ with the supplied letter at the widest point.
+
+For example: print-diamond ‘C’ prints
+
+```
+  A
+ B B
+C   C
+ B B
+  A
+```
